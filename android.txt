@@ -1,0 +1,86 @@
+ANDROID 相关知识
+http://book.51cto.com/art/201212/374908.htm
+http://www.mediatek-helio.com/x20/ch/
+http://www.chinaz.com/mobile/2015/0810/432620.shtml
+http://news.mydrivers.com/1/382/382264.htm
+http://www.elecfans.com/bandaoti/gongyi/20140401338833.html
+
+
+
+---------------------------------------
+工具资源类
+---------------------------------------
+github资源
+https://github.com/Freelander/Android_Data
+https://github.com/jiang111/awesome-android-tips
+
+---------
+AS中文网
+www.android-studio.org/
+
+----------------
+安装HAXM问题资源
+http://stackoverflow.com/questions/36527278/dev-kvm-not-found-error-on-windows-in-android-studio
+https://software.intel.com/en-us/forums/android-applications-on-intel-architecture/topic/537144#comment-1846715
+
+http://stackoverflow.com/questions/40013862/android-studio-emulator-issues-haxm-vt-x
+http://stackoverflow.com/questions/36501550/android-sdk-install-system-image-packages-offline
+
+----------------------
+知乎AS相关资源镜像站点
+http://www.cnblogs.com/bjzhanghao/archive/2012/11/14/android-platform-sdk-download-mirror.html
+http://mirrors.neusoft.edu.cn/android/repository/
+
+如果要连上谷歌下载，可以使用代理。
+打开SDK Manager，点击Tools， 填入下面的代理和端口：
+http://mirrors.neusoft.edu.cn ： 80
+注意要直接复制，别加 http之类的前缀。实测加了就无法下载。再勾上Force https//……然后就可以下载了。
+作者：神锋  链接：https://www.zhihu.com/question/28238176/answer/39986980
+
+
+
+-------------------------------
+ANDRIOD编程项目资源类
+-------------------------------
+第一行代码
+http://www.linuxidc.com/Linux/2015-05/117920.htm
+-----------
+icon
+https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html
+-----------
+AS google站
+https://developer.android.com/studio/debug/am-logcat.html
+-----------
+open-project
+https://github.com/Trinea/android-open-project
+-----------
+应用发布
+http://blog.csdn.net/chenyufeng1991/article/details/48979459
+
+
+
+--------
+项目计划
+--------
+MBTI性格测试 单机版 V1
+提供26题和93题两种类型的性格测试，最后累计各项总分数，给出性格类型结果，提供职业参考意见
+
+V1.1提供26题版的，
+V1.3提供各种性格类型的参考资料，提供跳转查看
+V1.5提供93题版
+-----------------
+项目资源
+MBTI职业性格测试 百度百科
+http://www.apesk.com/mbti/dati.asp
+ASB 面向项目的沟通技巧 课件
+---------------
+实现参考版
+版本号找到build.gradle 文件
+http://www.runoob.com/w3cnote/android-tutorial-listen-event-handle.html
+http://www.voidcn.com/blog/u012005313/article/p-4394678.html
+
+滚动条
+http://blog.csdn.net/qq_16131393/article/details/51090586
+按钮单选
+http://blog.csdn.net/coder_pig/article/details/47035625
+http://www.cnblogs.com/plokmju/p/android_UI_CompoundButton.html

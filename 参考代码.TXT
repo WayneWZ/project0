@@ -1,0 +1,87 @@
+
+
+-------------------------
+        button_option1.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+                startActivity(intent);
+            }
+        });
+        
+        
+---------------------
+Button button=(Button)findViewById(R.id.button_option1);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "You choosed 23 subjects test", Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+            }
+        });
+        
+
+---------------------
+Button button3=(Button)findViewById(R.id.button_option3);
+button3.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {        
+       Intent intent = new Intent(Intent.ACTION_VIEW);
+       intent.setData(Uri.parse("http://www.baidu.com"));
+       startActivity(intent);
+    }
+});
+
+---------------------------
+
+//4.打开浏览器:
+// 打开百度主页
+Uri uri = Uri.parse("http://www.baidu.com");
+Intent intent  = new Intent(Intent.ACTION_VIEW, uri);
+startActivity(intent);
+
+//2.发送短信
+// 给10086发送内容为“Hello”的短信
+Uri uri = Uri.parse("smsto:10086");
+Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
+intent.putExtra("sms_body", "Hello");
+startActivity(intent);
+
+//1.拨打电话
+// 给移动客服10086拨打电话
+Uri uri = Uri.parse("tel:10086");
+Intent intent = new Intent(Intent.ACTION_DIAL, uri);
+startActivity(intent);
+
+////
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.waynewz.vision/com.waynewz.vision.FifthActivity}: 
+ java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
+http://stackoverflow.com/questions/218384/what-is-a-nullpointerexception-and-how-do-i-fix-it
+
+------------------
+
+            <RadioGroup
+                android:id="@+id/radioGroup_test2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+                </RadioGroup>
+                
+-----------------
+Button btnchange = (Button) findViewById(R.id.btnpost);
+        RadioGroup radgroup = (RadioGroup) findViewById(R.id.radioGroup);
+        //为radioGroup设置一个监听器:setOnCheckedChanged()  
+        btnchange.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                for (int i = 0; i < radgroup.getChildCount(); i++) {
+                    RadioButton rd = (RadioButton) radgroup.getChildAt(i);
+                    if (rd.isChecked()) {
+                        Toast.makeText(getApplicationContext(), "点击提交按钮,获取你选择的是:" + rd.getText(), Toast.LENGTH_LONG).show();
+                        break;
+                    }
+                }
+            }
+        });
